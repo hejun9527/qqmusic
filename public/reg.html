@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reg.css">
+    <link rel="stylesheet" href="../css/all.css">
+</head>
+<body>
+    <div class="reg">
+            <div id="lunbo">
+                    <ul>
+                        <li class="item active"><img src="../img/01-1.jpg"/></li>
+                        <li class="item"><img src="../img/01-3.jpg"/></li>
+                        <li class="item"><img src="../img/01-4.jpg"/></li>
+                        <li class="item"><img src="../img/01-1.jpg"/></li>
+                    </ul>
+                    <ul>
+                        <li class="point  active" data-index='0'><span></span></li>
+                        <li class="point" data-index='1'><span></span></li>
+                        <li class="point" data-index='2'><span></span></li>
+                        <li class="point" data-index='3'><span></span></li>
+                    </ul>
+                    
+             </div>
+        <div></div>
+        <div>
+            <p>欢迎注册QQ</p>
+            <p>
+                <span>每一天，乐在沟通。</span>
+                <span><a href="">免费靓号</a></span>
+            </p>
+            <p><input type="text" placeholder="昵称" id="uname" onblur="nottwo()" onfocus="show_uname_msg()"><span id="show_msg"></span></p>
+            <p><input type="password" placeholder="密码" id="upwd" onblur="nottwo1()" onfocus="show_upwd_msg()"><span id="show_upwd"></span></p>
+            <p>
+                <span></span>
+                <span><input type="text" placeholder="验证码"  id="text" onblur="notnull()" onfocus="show_text_msg()"></span><span id="show_text"></span>
+                <span id="discode"></span>
+                <input type="button" value="换一换" onclick="createCode()">
+            </p>
+            <p></p>
+            <p><button onclick="yanzheng()">立即注册</button></p>
+            <p><input type="checkbox" checked='true'><span>我已同意相关服务条款和隐私政策</span><span id="dao" class="img01"></span></p>
+        </div>
+        <div id="san" class="san1">
+            <a href="">《QQ号码规则》</a><br>
+            <a href="">《隐私政策》</a><br>
+            <a href="">《QQ空间服务协议》</a>
+        </div>
+        <div><img src="../img/logo.png">QQ</div>
+        <div>
+            <ul>
+                <li><a href=""><img src="../img/logo3.png">QQ靓号</a></li>
+                <li>
+                    <a href="">简单中文</a>
+                    <span></span>
+                    <ul>
+                        <li><a href="">繁體中文</a></li>
+                        <li><a href="">English</a></li>
+                    </ul>
+                </li>
+                <li><a href="">意见反馈</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="../js/reg.js"></script>
+</body>
+</html>

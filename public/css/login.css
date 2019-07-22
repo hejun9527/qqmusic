@@ -1,0 +1,175 @@
+body{
+	background: linear-gradient(to right,#fff,#acd1ee);
+}
+#bigbj{
+	position: fixed;
+	width: 35%;
+	
+	z-index: -1;
+	top: 0;
+	right: 0;
+}
+.login{
+    width: 420px;
+    height: 380px;
+    margin: 200px 0px 0 240px;
+    position: relative;
+    padding: 10px 5px 0 5px;
+    background: #fff;
+}
+.login>hr:nth-child(2){
+    margin: 10px 0 10px 0;
+}
+.login>div>hr{
+    margin: 0px 0 -55px 0;
+}
+.login>p>.active{
+    color: #86ce2f;
+}
+.login>p{
+    width: 270px;
+    text-align: center;
+    margin: 0 auto;
+}
+.login>p{
+    display: flex;
+    justify-content: space-between;
+    line-height: 30px;
+}
+.login>p>a{
+    color: #000;
+    font-size: 16px;
+}
+.login>p>a:last-child{
+    position: absolute;
+    top: -8px;
+    right: 0px;
+    font-size: 20px;
+}
+#QQ{
+    width: 420px;
+    height: 326px;
+    margin: 0 auto;
+    position: absolute;
+    background: #fff;
+    top: 63px;
+    left: 5px;
+}
+#WE{
+    width: 420px;
+    height: 326px;
+    margin: 0 auto;
+    background-color: #fff;
+    position: absolute;
+    top: 63px;
+    left: 5px;
+    z-index: -1;
+}
+#WE>p:nth-child(1)>img{
+    margin: 10px 0 10px 0;
+    width: 160px;
+    height: 160px;
+}
+#WE>p:nth-child(2){
+    font-size: 13px;
+}
+#WE>p:nth-child(3){
+    color: #999;
+    font-size: 13px;
+    line-height: 40px;
+}
+#WE>p:nth-child(4){
+    color: #999;
+    font-size: 12px;
+}
+#QQ>p,
+#WE>p{
+    width: 270px;
+    text-align: center;
+    margin: 0 auto;
+}
+#QQ>p:nth-child(1){
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 16px;
+}
+#QQ>p:nth-child(2){
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #666;
+}
+#QQ>p:nth-child(2)>a{
+    color: #3481cf;
+}
+#QQ>p:nth-child(3)>input,
+#QQ>p:nth-child(4)>input{
+    width: 250PX;
+    height: 30PX;
+    margin-bottom: 16px;
+}
+#QQ>p:nth-child(5)>button{
+    width: 250px;
+    height: 30PX;
+    line-height: 26PX;
+    font-size: 16PX;
+    color: #FFF;
+    border: none;
+    background-color: #86ce2f;
+}
+#QQ>p:nth-child(6){
+    width: 100%;
+    float: left;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    margin: 20px 0 0px 0;
+}
+#QQ>p:nth-child(6)>input{
+    float: left;
+    margin-top: 10px;
+}
+#QQ>p:nth-child(6)>.span{
+    float: left;
+}
+#QQ>p:nth-child(6)>span:last-child{
+    float: right;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+#QQ>p:nth-child(6)>span>a{
+    color: rgb(44, 43, 43);
+}
+#QQ>p:last-child{
+    margin-top: 72px;
+    height: 30px;
+    background: #d9eaf7;
+    line-height: 30px;
+    border-radius: 20px;
+    
+}
+#WE>p:last-child{
+    margin-top: 21px;
+    height: 30px;
+    background: aqua;
+    line-height: 30px;
+    border-radius: 20px;
+    
+}
+#QQ>p:last-child>a,
+#WE>p:last-child>a{
+    color: #fff;
+    font-size: 16px;
+}
+#uname_msg{
+    position: absolute;
+    right: 0px;
+    top: 86px;
+    font-size: 12px;
+}
+#upwd_msg{
+    position: absolute;
+    right: 0px;
+    top: 134px;
+    font-size: 12px;
+}

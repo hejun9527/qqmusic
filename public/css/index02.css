@@ -1,0 +1,122 @@
+.fif{
+        width: 100%;
+        height: 750px;
+        background: linear-gradient(to bottom,#f5f5f5,#fff)
+    }
+   
+    .fif_one{
+        width: 70%;
+        margin: auto;
+        height: 640px;
+    }
+    .fif_top{
+        width: 100%;
+        height: 100px;
+    }
+    .fif_top p{
+        width: 100%;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        font-size: 30px;
+        
+
+    }
+    .fif_top p span{
+        float: right;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .fif_top p span:hover{
+        color: #31c27c;
+        
+    }
+    .fif_align{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: space-around;
+        /* border: 1px solid red; */
+        clear: both;
+    }
+    .fif_align_div{
+        width: 200px;
+        height: 500px;
+        float: left;
+        position: relative;
+        background: url(../img/image/bg_index_top.jpg);
+    }
+    .fif_align_div:not(:first-child){
+        margin-left: 1.2%;
+    }
+    .fif_align_div h3{
+        width: 100%;
+        margin-top: 40px;
+        text-align: center;
+        color: white;
+    }
+    .fif_align_div p{
+        width: 100%;
+        height: 20px;
+        font-size: 30px;
+        color: white;
+        text-align: center;
+    }
+    .fif_align_div:hover p:nth-child(3){
+        display: none
+    }.fif_align_div:hover img:nth-child(4){
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 110px;
+        left: 30px;
+    }
+    .fif_align_div p:nth-child(3){
+        width: 30px;
+        height: 3px;
+        margin-top:53px;
+        margin-left: 83px;
+        background-color: #fff;
+    }
+    .fif_align_div img:nth-child(4){
+        width: 0px;
+        height: 0px;
+        margin-left:35px ;
+        position: absolute;
+        top: 140px;
+        left: 60px;
+        transition: all .3s linear;
+    }
+    .fif_align_div ul:nth-child(5){
+        position: absolute;
+        top:185px;
+        margin-left: 20px;
+        height: 300px;
+        width: 150px;
+    }
+    .fif_align_div li{
+        height: 60px;
+        width: 150px;
+        margin-top: 20px;
+    }
+    .fif_align_div li p{
+        height:25px;
+        width: 150px;
+        font-size: 13px;
+        text-align: left;
+    }
+    .fif_align_div li p a{
+       color: white;
+    }
+    .fif_align_div:nth-child(3){
+        background-position: -460px; 
+    }
+    .fif_align_div:nth-child(2){
+        background-position: -230px; 
+    }
+    .fif_align_div:nth-child(4){
+        background-position: -690px; 
+    }
+    .fif_align_div:nth-child(5){
+        background-position: -920px; 
+    }

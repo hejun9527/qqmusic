@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/all.css">
+</head>
+<body>
+	<img id='bigbj' src="img/01-4.jpg"/>
+    <div class="login" id="login">
+        <p>
+            <a href="javascript:;" data-toggle="tab" data-id="QQ" class="active">QQ登录</a>
+            <a href="javascript:;" data-toggle="tab" data-id="WE">微信登录</a>
+            <a id="x" href="javascript:;"></a>
+        </p>
+       <hr>
+       <div id="QQ">
+        <p>账户密码登录</p>
+        <p>推荐使用<a href="javascript:;">快速安全登录</a>，防止盗号。</p>
+        <p><input type="text" placeholder="支持QQ号/邮箱/手机号登陆"  onblur="notnull()" onfocus="show_uname_msg()" id="uname"><span id="uname_msg"></span></p>
+        <p><input type="password" placeholder="密码"onblur="notnull_pwd()" onfocus="show_upwd_msg()" id="upwd"><span id="upwd_msg"></span></p>
+        <p><button onclick="show()">登 录</button></p>
+        <p><input type="checkbox"><span class="span">下次自动登录</span><span><a href="javascript:;">忘了密码</a>|<a href="http://127.0.0.1:3000/reg.html">注册新账号</a>|<a href="javascript:;">意见反馈</a></span></p>
+        <hr>
+        <p><a href="">下载客户端 体验更多内容</a></p>
+    </div>
+    <div id="WE">
+        <p><img src="../img/081QH5utLyv8Ownt.jpg" alt=""></p>
+        <p>请用微信扫描二维码</p>
+        <p>“QQ音乐”</p>
+        <p>QQ与微信账号的音乐资产、付费特权不相通</p>
+        <p><a href="">下载客户端 体验更多内容</a></p>
+    </div>
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+</html>
