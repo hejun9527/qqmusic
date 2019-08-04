@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{padding: 0;margin: 0;box-sizing: border-box;}
+    #conts p{
+		display:inline-block;
+		padding:3px 0px 3px 0px;
+		margin:0px;
+	}
+    #send_input{
+		display: block;
+		width: 100%;
+		border: none;
+		font-size: 1em;
+		line-height: 20px;
+		margin: 0;
+		padding: 0.3em;
+		resize: none;
+		font-family: inherit;
+		color: inherit;
+		box-sizing: border-box;
+		border:1px solid #FE0002;
+		border-radius:4px 0 0 4px;
+	}
+    .life-box{width:80%; height:800px;margin: 0 auto;border-radius: 2%; background:rgba(0,0,0,.6);}
+    .life-box h2{ margin:5px 0; font-family:"微软雅黑"; font-size:28px; text-align:center; color:#fff;}
+    /* .life-box .mylife{ height:250px;} */
+    #conts{margin:0 auto ;padding-left:2%;padding-right:2%;
+    overflow-y: scroll;overflow-x: hidden;}
+    
+    .life-box .send{height:40px;width:100%;z-index:99999;}
+    .life-box .send .input{width:400px;float:left;margin-left:5%;}
+    .life-box .send-btn a{background-color:#FE0000;color:#fff;width:80px;height:30px;display: inline-block;text-align: center;line-height:30px;cursor:pointer; border-radius:0 4px 4px 0;}
+
+    .mm .m_screen .m_show{position: relative;z-index:2;}
+    .m_show .user{width:85%;color:#fff; background:rgba(1,1,1,.4);border-radius:5px; margin:5px; clear: both; overflow: hidden;}
+    .m_show .user div:nth-child(1){height:40px; margin: 15px;}
+	.m_show .user div:nth-child(1) img{width:40px; height:40px;border-radius:50%;float:left; display: inline-block; margin-right: 30px;}
+    .m_show .user div:nth-child(1) span{
+        text-align: center;
+        line-height: 40px;
+        float: left;
+	}
+    .m_show .user div:nth-child(1) span:nth-child(3){
+        margin-right: 20px;
+        float: right;
+	}
+    .m_show .user div:nth-child(2){
+        width: 90%;
+        height: 100%;
+        padding: 10px;
+        background: #f2f2f2;
+        margin: 25px;
+        color: rgb(87, 84, 84)
+	}
+    .m_show .user div:nth-child(2) span{
+        display: flex;
+        width: 100%;
+        word-break: break-all;
+        text-indent: 2em;
+	}
+    .m_show .user div:nth-child(3){
+        width: 100%;
+        height: 40px;
+        /* border: 1px solid red; */
+	}
+    .m_show .user div:nth-child(3) span{
+        display: inline-block;
+        line-height: 40px;
+        height: 40px;
+        margin-left: 30px;
+        font-size:12px; 
+        /* border: 1px solid red; */
+	}
+    .m_show .user div:nth-child(3) span:not(:first-child){
+       float: right;
+       margin-right:30px; 
+	}
+    </style>
+</head>
+<body>
+    <div class="life-box">
+        <h2>评论区</h2>
+        <div class="mylife">
+            <div id="conts">
+                <div class="mm">
+                    <div class="m_screen">
+                        <div class="m_show">
+                            <div class="user">
+                                <div>
+                                    <img src="../img/bg.png" alt="">
+                                    <span>网名位置</span><span class="var">x</span>
+                                    
+                                </div>
+                                <div>
+                                    <span>sdsadsadsadasdadsa阿士大夫第三方师傅 佛挡杀佛方式发多少撒旦是否的是方式范德萨发生电风扇等相关处罚或vjbkjdxflnjhbZd;l,kjhgfc为控件而出二次人让我承认几块钱如此脆弱成口头禅可能让新人摩托车南方人经常性非常耐腐蚀采暖费侧唛传入那麻烦触发内存</span>
+                                </div>
+                                <div>
+                                    <span>2019/9/9</span><span>点赞(m)</span><span>反对(n)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="send">
+            <div class="input">
+                <input id="send_input" name="content" type="text" value="" placeholder="请输入评语" >
+            </div>
+            <div class="send-btn" >
+                <a onClick="send_reply2()">发送</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+    var can=true
+    function send_reply2() {
+        if($("#conts").height()>500){
+            $("#conts").css("height",700)
+        }
+        var content = $("#send_input").val();
+        if ($.trim(content) == "") {
+            alert("亲，请输入你的评论！");
+            return false;
+        }
+        if(can){ 
+            can=false
+            setTimeout(function(){      
+               can=true
+               var text=$("#send_input").val();
+                input(text)
+                $("#send_input").val()
+                console.log($("#send_input").val())
+                
+            },1000)
+        }else{
+            alert("请稍等........")
+        }
+    }
+    $("#send_input").keyup(function(ev){
+        var ev=ev||event;
+        if(ev.keyCode==13){
+            send_reply2();
+        }
+    })
+    function input(val){
+        var now=new Date()
+	    var div=$(` <div class="user">
+                        <div>
+                            <img src="./img/bg.png" alt="">
+                            <span>网名位置</span><span class="var">x</span>
+                        </div>
+                        <div>
+                            <span>${val}</span>
+                        </div>
+                        <div>
+                            <span>${now.toLocaleString()}</span><span>点赞(m)</span><span>反对(n)</span>
+                        </div>
+                    </div>`);
+        $(".m_show").prepend(div);
+        
+    }
+    function del(){
+        $($(".d_show").children("div").get(0)).remove();
+    }
+    $(document).scroll(function(){
+        var sh=$(document).scrollTop();//滚动
+        var vieh=$(window).height();
+        var comth=$(document).height();
+        if(sh>110){//距离顶端大于100
+            console.log(sh)
+            console.log("距离顶端大于100")
+        }
+        if(comth-(sh+vieh)<=100){//距离底部高度小于100
+            // console.log("距离底部高度小于100")
+        }
+        if(comth=(sh+vieh)){//滚动条到底部
+            // console.log("滚动条到底部")
+        }
+
+    })
+    </script>
+</body>
+</html>

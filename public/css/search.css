@@ -542,7 +542,8 @@ width: 15%;
     background-size: 150px;
     
 }
-.footer>div:nth-child(3)>ul>li:nth-child(4):hover>span{
+.footer>div:nth-child(3)>ul>li:nth-child(4):hover>span,
+.footer>div:nth-child(3)>ul>li:nth-child(4):hover>span>a{
     color: #31c27c;
 }
 .footer>div:nth-child(3)>ul>li:nth-child(4)>span{
@@ -553,6 +554,9 @@ width: 15%;
     top: -6px;
     left: 17px;
     font-size: 10px;
+    color: #fff;
+}
+.footer>div:nth-child(3)>ul>li:nth-child(4)>span>a{
     color: #fff;
 }
 .footer>div:nth-child(3)>ul>li:nth-child(5){
